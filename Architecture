@@ -1,0 +1,26 @@
+3 tiered landscape:
+
+
+Purpose for Each Component
+
+Arduino:
+  1. read senor input: light, humidity, temperature, moisture
+  2. control equipment: light(s), misting/pumps, fan
+  3. upload sensor data to BeagleBone
+
+
+BeagleBone:
+  1. log sensor data
+  2. provide UI for user monitoring
+  3. provide UI for user control
+
+Serverside:
+  TBD
+  
+
+
+Funtional Requirements for each Component
+
+1. An Arduino controller can function independently without higher level controllers but it will not have the full feature set.
+2. An Arduino controller can connect direct to either a BeagleBone or to the Server
+3. An Arduino controller can connect to remote resourcves via ethernet or wifi
